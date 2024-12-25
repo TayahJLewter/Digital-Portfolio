@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Tayah's Digital Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    
+</head>
+    <body>
+        <div class="top-header">
+            <!-- Desktop Nav (Always Visible)-->
+                <div class="nav-h">
+                 <a class="active "href="about.html">About Me</a></li>
+                 <a href="projects.html">Projects</a>
+                 <a href="blog.html">Blog</a>
+                 <a href="contact.html">Contact</a>
+                </div>
+            <!-- Mobile Nav (Hidden on Desktop)-->
+            <nav>
+            <div class="menu-icon" id="menuIcon">&#9776;</div>
+            <ul id="navMenu">
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        </div>
+          
+        <div class="main-content">
+        <h1>Hi, welcome to my portfolio!</h2>
+        <img id="profileImg" src="profile.png" alt="A picture of Tayah">
+       <h2>Tayah Lewter</h2>
+       <a href="mailto:TayahLewter@gmail.com">Email Me</a><a rel="noopener" href="https://www.linkedin.com/in/tayahlewter/" target="_blank"> | Lets Connect on Linkedin</a>
+       <h3>Expected Graduation: May 2025</h3>
+        <p>I am a rising senior Information Technology major at Winston-Salem State University. <br> 
+           As an aspiring Web Developer and Software Engineer, I have a passion for coding and technology. <br>
+           This website is my online portfolio showcasing my work.</p>
+       </div>
+       
+        <button class="button-hearts type="button" href="about.html">About Me</button>
+        <button class="button-hearts type="button" href="projects.html">Projects</button>
+        <button class="button-hearts type="button" href="blog.html">Blog</button>
+        <button class="button-hearts type="button" href="contact.html">Contact Me</button>
+        <script>
+            const menuIcon = document.getElementById('menuIcon');
+            const navMenu = document.getElementById('navMenu');
+
+            menuIcon.addEventListener('click', () => {
+                navMenu.classList.toggle('show');
+            });
+        </script>
+    </body>
+</html>

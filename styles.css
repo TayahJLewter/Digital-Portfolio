@@ -1,0 +1,95 @@
+body {
+  font-family: Math;
+  background: linear-gradient(to bottom, #FADADD, #B79EEC);
+  margin: 0;
+  padding: 0;
+}
+.top-header {
+    background-color: #d8bfd8;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.nav-h {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-h a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+.main-content {
+  padding-top: 5px;
+  margin: 8%;
+  text-align: center;
+  font-size: large;
+}
+nav {
+  font-weight: normal;
+  color: white;
+  text-align: center;
+  width: 10em;
+  position: relative;
+}
+
+nav ul {
+  background: #FFF9B0; 
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+}
+
+nav:hover ul {
+  display: block;
+}
+
+nav ul li {
+  border-top: 2px solid black;
+  background-color: white;
+  width: 100%;
+  color: black;
+}
+
+nav ul li:hover {
+  background-color: pink;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+}
+
+h1 {
+    color: indigo;
+    font-size: 300%;
+}
+
+#profileImg {
+  width: 30%;
+  text-align: left;
+}
+
+.button-hearts {
+  width: 20%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  mask: radial-gradient(at 70% 31%, #000 29%, #0000 30%),
+    radial-gradient(at 30% 31%, #000 29%, #0000 30%),
+    linear-gradient(#000 0 0) bottom/100% 50% no-repeat;
+  clip-path: polygon(-41% 0, 50% 91%, 141% 0);
+}
+
