@@ -1,68 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Title | Tayah's Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
-</head>
-<body class="light-background">
-    <!-- Header Section -->
-    <header class="top-header">
-        <div class="nav-h">
-            <a class="active" href="index.html">Home</a>
-            <a href="about.html">About Me</a>
-            <a href="projects.html">Projects</a>
-            <a href="contact.html">Contact</a>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Page Title | Tayah's Portfolio</title>
+        <link rel="stylesheet" href="styles.css">
+        <script defer src="script.js"></script>
+    </head>
+
+    <body class="light-background">
+        <!-- Header Section -->
+        <div class="top-header">
+            <!-- Desktop Nav (Always Visible)-->
+            <div class="nav-h">
+                <a class="active" href="index.html">Home</a>
+                <a href="about.html">About Me</a></li>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <!-- Mobile Nav (Hidden on Desktop)-->
+            <div class="hamburger" id="hamburger">&#9776;</div>
+            <nav id="mobileNav">
+                <ul>
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <div class="menu-icon" id="menuIcon">&#9776;</div>
-            <ul id="navMenu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <!-- Main Content Section -->
-    <main class="main-content">
-        <h1>Let's Connect!</h1>
-        <p>I would love to connect with you. I am available via <a rel="noopener" href="mailto:TayahLewter@gmail.com">email</a> at TayahLewter@gmail.com or phone number (available upon request).</p>
-        <h2>Inquiries and Requests</h2>
-        <form action="/action_page.php" autocomplete="on">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required><br>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Supercooluser@domain.com" required><br>
-            <label for="company">Company/Organization:</label>
-            <input type="text" id="company" name="company"><br>
-            <label for="phone">Phone Number</label>
-            <input type="phone" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9] {3}-[0-9]{3}-[0-9]{3}" required><br>
-            <!--CHECKBOXES-->
-            <label for="inquiry">Business Collaboration</label>
-            <input type="checkbox" id="inquiry1" name="inquiry1" title="Business Collaboration">
-            <label for="inquiry">Project Request</label>
-            <input type="checkbox" id="inquiry2" name="inquiry1" title="Project Request">
-            <label for="inquiry">Internship/Job Opportunity</label>
-            <input type="checkbox" id="inquiry3" name="inquiry1" title="Job">
-            <label for="inquiry">General Question or Comment</label>
-            <input type="checkbox" id="inquiry4" name="inquiry1" title="Question"><br>
-            <textarea id="desc" name="inquirydesc" placeholder="Please comment a description or relevant information regarding your inquiry."></textarea><br>
-            <label for="files">Files</label>
-            <input type="file" id="files" name="files" multiple>
-        </form>
-    </main>
+        <!-- Main Content Section -->
+        <main class="main-content">
+            <h1>Let's Connect!</h1>
+            <p>I would love to connect with you. I am available via email at <br> <a rel="noopener"
+                    href="mailto:TayahLewter@gmail.com">TayahLewter@gmail.com</a>  or phone number (available
+                upon request).</p>
+            <div class="form-container">
+                <h2 class="form-title">Inquiries and Requests</h2>
+            <form action="/action_page.php" autocomplete="on">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="name" name="name" placeholder="Full name" required><br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="email" id="email" name="email" placeholder="User@domain.com" required><br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="company">Company</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="company" name="company" placeholder="Company or Organization"><br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                <label for="phone">Phone Number</label>
+                </div>
+                <div class="col-75">
+                <input type="tel" id="phone" name="phone" placeholder="123-456-7890"
+                    pattern="[0-9] {3}-[0-9]{3}-[0-9]{3}" required><br><br>
+                </div>
+                </div>
+                    <!--Dropdown Menu-->
+                    <div class="row" >
+                        <div class="form-center">
+                        <select id="inquirytype" name="inquirytype" title="inquirytype">
+                            <option value="job">Job or Internship Opportunity</option>
+                            <option value="collab">Business Collaboration</option>
+                            <option value="project">Project Request</option>
+                            <option value="other">Other</option>
+                        </select><br><br>
+                    </div>
+                    </div>
+                    <div class="row">
+                    <div class="form-center">
+                <textarea id="desc" name="inquirydesc" placeholder="Please provide a detailed description of your inquiry, including any relevant information or questions you may have."></textarea><br>
+                </div>
+                </div>
+                <label for="files">Files</label>
+                <input type="file" id="files" name="files" multiple>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        </main>
 
-    <!-- Footer Section -->
-    <footer class="footer">
-        <p>&copy; 2024 Tayah Lewter. All Rights Reserved.</p>
-        <p>
-            <a rel="noopener" href="mailto:TayahLewter@gmail.com">Email Me</a> | 
-            <a rel="noopener" href="https://www.linkedin.com/in/tayahlewter/" target="_blank">LinkedIn</a>
-        </p>
-    </footer>
-</body>
+        <!-- Footer Section -->
+        <footer class="footer">
+            <h4>&copy; 2024 Tayah Lewter. All Rights Reserved.</h4>
+            <h4>
+                <a rel="noopener" href="mailto:TayahLewter@gmail.com">Email Me</a> |
+                <a rel="noopener" href="https://www.linkedin.com/in/tayahlewter/" target="_blank">LinkedIn</a>
+            </h4>
+        </footer>
+        <script src="global.js"></script>
+    </body>
 </html>

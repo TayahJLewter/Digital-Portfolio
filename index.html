@@ -1,44 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tayah's Digital Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    
-</head>
-<body>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tayah's Digital Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+
+    <body class="home-background">
         <div class="top-header">
             <!-- Desktop Nav (Always Visible)-->
-                <div class="nav-h">
-                 <a class="active" href="index.html">Home</a>
-                 <a class="active "href="about.html">About Me</a></li>
-                 <a href="projects.html">Projects</a>
-                 <a href="contact.html">Contact</a>
-        </div>
-            <!-- Mobile Nav (Hidden on Desktop)-->
-            <nav>
-            <div class="menu-icon" id="menuIcon">&#9776;</div>
-            <ul id="navMenu">
+            <div class="nav-h">
                 <a class="active" href="index.html">Home</a>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+                <a href="about.html">About Me</a></li>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <!-- Mobile Nav (Hidden on Desktop)-->
+            <div class="hamburger" id="hamburger">&#9776;</div>
+            <nav id="mobileNav">
+                <ul>
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-          
+
         <div class="main-content">
-        <h1>Hi, welcome to my portfolio!</h2>
-        <img id="profileImg" src="winter.png" alt="A picture of Tayah">
-       <h2>Tayah Lewter</h2>
-       <a href="mailto:TayahLewter@gmail.com">Email Me</a><a rel="noopener" href="https://www.linkedin.com/in/tayahlewter/" target="_blank"> | Let's Connect on Linkedin</a>
-       <h3>Expected Graduation: May 2025</h3>
-        <p>I am a rising senior Information Technology major at Winston-Salem State University. <br> 
-           As an aspiring Web Developer and Software Engineer, I have a passion for coding and technology. <br>
-           This website is my online portfolio showcasing my work.</p>
-       </div>
-       <button title="projects" class="project-button" onclick="location.href='projects.html'">View Projects</button>
+            <div class="intro">
+            <div class="index-left">
+            <h3 id="index-h3">Welcome to my portfolio,</h3>
+            <h1 id="index-h1">I'm Tayah Lewter!</h1>
+                <p id="index-p">I am a rising senior majoring in Information Technology, set to graduate with my Bachelor of Science in May 2025. With a deep passion for coding and technology,
+                    I'm on a journey to turn innovative ideas into impactful solutions.</p>
+        <div class="button-container">
+        <button title="resume" class="resume-button" onclick="location.href='projects.html'">Download Resume</button>
+        <button title="projects" class="project-button" onclick="location.href='projects.html'">View Projects</button>
+        </div>        
+    </div>
+            <div class="index-right">   
+            <img id="profileImg" src="profile.svg" alt="A picture of Tayah">
+    </div>
+</div>
+                    </div>
+        <script src="global.js"></script>
     </body>
+
 </html>

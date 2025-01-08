@@ -9,26 +9,29 @@
 </head>
 <body class="light-background">
     <!-- Header Section -->
-    <header class="top-header">
-        <div class="nav-h">
-            <a class="active" href="index.html">Home</a>
-            <a href="about.html">About Me</a>
-            <a href="projects.html">Projects</a>
-            <a href="contact.html">Contact</a>
-        </div>
-        <nav>
-            <div class="menu-icon" id="menuIcon">&#9776;</div>
-            <ul id="navMenu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="top-header">
+        <!-- Desktop Nav (Always Visible)-->
+            <div class="nav-h">
+             <a class="active" href="index.html">Home</a>
+             <a href="about.html">About Me</a></li>
+             <a href="projects.html">Projects</a>
+             <a href="contact.html">Contact</a>
+    </div>
+        <!-- Mobile Nav (Hidden on Desktop)-->
+        <div class="hamburger" id="hamburger">&#9776;</div>
+        <nav id="mobileNav">
+        <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    </div>
 
     <!-- Main Content Section -->
-    <main class="main-content">
+    <main class="index-main">
         <h1>Projects</h1>
         <p>Welcome to the Projects page of my portfolio. Everything you are viewing has been coded from scratch by me! 
             Want to take a look at behind the scenes? Check out my <a rel="noopener" href="https://github.com/TayahJLewter" target="_blank">Github</a>!
@@ -42,16 +45,17 @@
     </div>
     <div class="responsive">
         <div class="desc">Volunteer Matching Site for 24hr Code-a-Thon.</div>
-        <a title="TechTitans Volunteer Matching" rel="noopener" target="_blank" href=""
+        <a title="TechTitans Volunteer Matching" rel="noopener" target="_blank" href=""></a>
     </div>
 
     <!-- Footer Section -->
     <footer class="footer">
-        <p>&copy; 2024 Tayah Lewter. All Rights Reserved. </p>
-        <p>
+        <h4>&copy; 2024 Tayah Lewter. All Rights Reserved. </h4>
+        <h4>
             <a rel="noopener" href="mailto:TayahLewter@gmail.com">Email Me</a> | 
             <a rel="noopener" href="https://www.linkedin.com/in/tayahlewter/" target="_blank">LinkedIn</a>
-        </p>
+        </h4>
     </footer>
+    <script src="global.js"></script>
 </body>
 </html>
