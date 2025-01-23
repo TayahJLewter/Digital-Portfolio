@@ -118,7 +118,8 @@ ul li:hover{
 }
 
 .experience-container{
-  background-color: white;
+  background-color: #f5e6d3
+  ;
   padding: 40px;
   margin: auto;
   max-width: 1200px;
@@ -128,7 +129,7 @@ ul li:hover{
 }
 
 .education-container{
-  background-color: white;
+  background-color: #f5e6d3;
   padding: 40px;
   margin: auto;
   max-width: 1200px;
@@ -140,6 +141,7 @@ ul li:hover{
 
 h2{
   text-align: center;
+  color: #aa96bb;
 }
 
 .footer {
@@ -149,7 +151,7 @@ h2{
   text-align: left;
   font-size: 0.8em;
   width: 100%;
-  background-color: #333;
+  background-color: #5c5346;
   padding: 5px 10px;
   max-height: 20px;
   display: flex;
@@ -274,7 +276,7 @@ button.project-button:hover {
 /* Style the navigation menu */
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: #5c5346;
   position: relative;
 }
 
@@ -304,8 +306,7 @@ cursor: pointer;
 
 /* Style the hamburger menu */
 .topnav a.icon {
-  background-color: fffaf0;
-  color: #5c5346;
+  background-color: #5c5346;
   display: block;
   position: absolute;
   right: 0;
@@ -445,4 +446,8 @@ a {
 
 a:hover {
   cursor: pointer;
+}
+
+#footer-copy{
+  color: #333;
 }
