@@ -2,15 +2,15 @@ body {
   font-family: Math;
   margin: 0;
   padding: 0;
-  background: linear-gradient(135deg, #c3aed6, #e8e8e8, #dcd6f7);
-  color: #4a2e73;
+  background: linear-gradient(135deg, #fffaf0, #fff5eb, #ffefe0);
+  color: #5c5346;
   min-height: 100vh;
   overflow-x: hidden;
   margin-bottom: 10%;
 }
 
 .top-header {
-    background-color: #aa96bb;
+    background-color: #c3aed6;
     position: fixed;
     display: flex;
     align-items: center;
@@ -66,7 +66,7 @@ body {
 .index-left h3{
   margin-bottom: -15px;
   text-align: left;
-  color: #497fd3;
+  color: #aa96bb;
 }
 
 .index-right{
@@ -90,7 +90,7 @@ body {
 }
 
 .main-content {
-  padding: 80px 20px 20px;
+  padding: 30px 20px 20px;
   font-size: large;
 }
 nav {
@@ -100,39 +100,16 @@ nav {
   position: relative;
 }
 
-nav ul {
-  background: #6a90cf; 
-  display: none;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  position: absolute;
-}
-
-nav:hover ul {
-  display: block;
-  color: navy;
-}
-
 nav ul li {
   border-top: 2px solid black;
   width: 100%;
   color: black;
 }
 
-nav ul li:hover {
-  background-color: lightblue;
-}
 
 ul li:hover{
-  text-decoration: underline;;
-}
-
-a {
   text-decoration: underline;
-  color: black;
 }
-
 
 #profileImg {
   width: 80%;
@@ -146,7 +123,7 @@ a {
   margin: auto;
   max-width: 1200px;
   width: 100%;
-  border: 2px solid #497fd3;
+  border: 2px solid #5c5346;
   border-radius: 25px;
 }
 
@@ -156,16 +133,13 @@ a {
   margin: auto;
   max-width: 1200px;
   width: 100%;
-  border: 2px solid #497fd3;
+  border: 2px solid #5c5346;
   border-radius: 25px;
   margin-top: 20px;
 }
 
 h2{
   text-align: center;
-}
-.light-background{
-  background-color: #6a90cf  !important;
 }
 
 .footer {
@@ -175,7 +149,7 @@ h2{
   text-align: left;
   font-size: 0.8em;
   width: 100%;
-  background-color: #aa96bb;
+  background-color: #333;
   padding: 5px 10px;
   max-height: 20px;
   display: flex;
@@ -190,6 +164,7 @@ h2{
 
 .footer h4 {
   margin: -1px;
+  padding-right: 10px;
 }
 textarea {
   width: 100%;
@@ -199,9 +174,9 @@ textarea {
 
 /* Common button styles */
 .common-button {
-  background-color: #497fd3;
+  background-color: #5c5346;
   box-shadow: 0 9px #999;
-  color: white;
+  color: #ffefe0;
   border: none;
   padding: 10px 20px;
   font-size: 1em;
@@ -217,25 +192,25 @@ textarea {
 } 
 
 .common-button:hover {
-  background-color: #3c69b0;
+  background-color: #aa96bb;
   color:white;
   text-decoration: none;
-  border-color: #3c69b0;
+  border-color: #aa96bb;
 }
 
 
 .common-button:active{
-  background-color: #3c69b0;
+  background-color: #5c5346;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
 
 button.resume-button:hover,
 button.project-button:hover {
-  background-color: #3c69b0;
+  background-color: #5c5346;
   color: white;
   text-decoration: none;
-  border-color: #3c69b0;
+  border-color: #5c5346;
 }
 
 /* Media Queries */
@@ -291,6 +266,9 @@ button.project-button:hover {
   .footer {
     font-size: 0.6em; /* Further reduce footer text size */
   }
+  .intro {
+    display: inline;
+  }
 }
 
 /* Style the navigation menu */
@@ -302,78 +280,49 @@ button.project-button:hover {
 
 /* Hide the links inside the navigation menu (except for logo/home) */
 .topnav #myLinks {
-  display: none;
+ background-color: #5c5346;
+ display: none;
+}
+
+.topnav #myLinks:hover {
+cursor: pointer;
 }
 
 /* Style navigation menu links */
 .topnav a {
-  color: white;
+  color: #fffaf0;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
   display: block;
+  height: 48px;
+}
+
+.topnav a:hover{
+  text-decoration: underline;
 }
 
 /* Style the hamburger menu */
 .topnav a.icon {
-  background: black;
+  background-color: fffaf0;
+  color: #5c5346;
   display: block;
   position: absolute;
   right: 0;
   top: 0;
 }
 
-/* Add a grey background color on mouse-over */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
+.topnav a.icon:hover {
+  background-color: #fffaf0;
+  color:#5c5346;
 }
 
 /* Style the active link (or home/logo) */
 .active {
-  background-color: #04AA6D;
+  background-color: #aa96bb;
   color: white;
 }
 
-/* Mobile Navigation */
-.hamburger {
-  cursor: pointer;
-  font-size: 1.5rem;
-  color: white;
-  display: none; /* Hidden by default */
-}
-
-#mobileNav {
-  display: none; /* Hidden by default */
-  background-color: #497fd3;
-  position: absolute;
-  top: 100%; /* Position below the header */
-  left: 0;
-  width: 100%;
-  list-style: none;
-  margin: 0;
-}
-
-#mobileNav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-#mobileNav ul li {
-  padding: 10px 0;
-  text-align: center;
-}
-
-#mobileNav ul li a {
-  text-decoration: none;
-  color: white;
-  font-size: 1.2rem;
-}
-
-#mobileNav.show{
-  display: block;
-}
 /* Mobile View (Under 768px) */
 @media (max-width: 768px) {
   .nav-h {
@@ -447,7 +396,7 @@ button.project-button:hover {
 input[type=text], select {
   width: 100%;
   padding: 12px;
-  border: 1px solid #497fd3;
+  border: 1px solid #5c5346;
   border-radius: 4px;
   resize: vertical;
 }
@@ -463,13 +412,12 @@ input[type=tel] {
   width: 100%;  /* Full width of parent container */
   height: 40px; /* Set a consistent height */
   padding: 10px;
-  border: 1px solid #497fd3;
+  border: 1px solid #5c5346;
   border-radius: 4px;
 }
 
 .form-title{
   text-align: center;
-  color:#365a8c;
 }
 
 .subheader{
@@ -478,10 +426,23 @@ input[type=tel] {
   text-align: center;
 }
 
-.mySlides {
-  display: none;
+.logo {
+  max-height: 40px;
+  margin-top: -9px;
 }
 
-.mySlides:first-child {
-  display: block;
+#form-button{
+  float: right;
+}
+
+h1{
+  color:#aa96bb;
+}
+
+a {
+  color: #aa96bb;
+}
+
+a:hover {
+  cursor: pointer;
 }

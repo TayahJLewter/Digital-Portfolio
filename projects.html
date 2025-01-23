@@ -6,26 +6,24 @@
     <title>Page Title | Tayah's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body class="light-background">
-    <!-- Header Section -->
-    <div class="top-header">
-        <!-- Desktop Nav (Always Visible)-->
-            <div class="nav-h">
-             <a class="active" href="index.html">Home</a>
-             <a href="projects.html">Projects</a>
-             <a href="contact.html">Contact</a>
-    </div>
-        <!-- Mobile Nav (Hidden on Desktop)-->
-        <div class="hamburger" id="hamburger">&#9776;</div>
-        <nav id="mobileNav">
-        <ul>
-            <li><a class="active" href="index.html">Home</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    </div>
+<body class="home-background">
+  <!-- Top Navigation Menu -->
+  <div class="topnav">
+    <a href="index.html">
+        <img src="logo.svg" alt="Logo" class="logo">
+    </a>
+     <div id="myLinks">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+    </div> 
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
 
     <!-- Main Content Section -->
     <main class="main-content">
