@@ -1,106 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Tayah's Digital Portfolio</title>
         <link rel="stylesheet" href="styles.css">
         <script defer src="script.js"></script>
-        
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
     <body class="home-background"">
-         <!-- Top Navigation Menu -->
-         <div class="topnav">
-            <a href="index.html">
-                <img src="logo.svg" alt="Logo" class="logo">
-            </a>
-             <div id="myLinks">
-                <a href="index.html">Home</a>
-                <a href="projects.html">Projects</a>
-                <a href="contact.html">Contact</a>
-            </div> 
-            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
+        <!-- Top Navigation Menu -->
+        <div class=" topnav">
+        <a href="index.html">
+            <img src="logo.svg" alt="Logo" class="logo">
+        </a>
+        <div id="myLinks">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
         </div>
 
         <!-- Main Content Section -->
         <main class="main-content">
-            <div class = "subheader">
-            <h1>Let's Connect!</h1>
-            <p>I would love to connect with you. I am available via email at <br> <a rel="noopener"
-                    href="mailto:TayahLewter@gmail.com">TayahLewter@gmail.com</a>  or phone number (available
-                upon request).</p>
+            <div class="subheader">
+                <h1>Let's Connect!</h1>
+                <p>I would love to connect with you. I am available via email at <br> <a rel="noopener"
+                        href="mailto:TayahLewter@gmail.com">TayahLewter@gmail.com</a> or phone number (available
+                    upon request).</p>
             </div>
             <div class="form-container">
                 <h2 class="form-title">Inquiries and Requests</h2>
-            <form id="contact-form" action="/" autocomplete="on" method="POST" netlify>
-                <div class="row">
-                    <div class="col-25">
-                        <label for="name">Name</label>
-                    </div>
-                    <div class="col-75">
-                        <input type="text" id="name" name="name" placeholder="Full name" required><br>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-25">
-                        <label for="email">Email</label>
-                    </div>
-                    <div class="col-75">
-                        <input type="email" id="email" name="email" placeholder="User@domain.com" required><br>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-25">
-                        <label for="company">Company</label>
-                    </div>
-                    <div class="col-75">
-                        <input type="text" id="company" name="company" placeholder="Company or Organization"><br>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-25">
-                <label for="phone">Phone Number</label>
-                </div>
-                <div class="col-75">
-                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required><br><br>
-                </div>
-                </div>
-                    <!--Dropdown Menu-->
-                    <div class="row" >
-                        <div class="form-center">
-                        <select id="inquirytype" name="inquirytype" title="inquirytype">
-                            <option value="job">Job or Internship Opportunity</option>
-                            <option value="collab">Business Collaboration</option>
-                            <option value="project">Project Request</option>
-                            <option value="other">Other</option>
-                        </select><br><br>
-                    </div>
+                <form id="contact-form" action="/" autocomplete="on" method="POST" netlify>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="name" name="name" placeholder="Full name" required><br>
+                        </div>
                     </div>
                     <div class="row">
-                    <div class="form-center">
-                <textarea id="desc" name="inquirydesc" placeholder="Please provide a detailed description of your inquiry, including any relevant information or questions you may have."></textarea><br>
-                </div>
-                </div>
-                <label for="files">Files</label>
-                <input type="file" id="files" name="files" multiple>
-                <button class="common-button" type="submit" id="form-button">Submit</button>
-            </form>
-        </div>
+                        <div class="col-25">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="email" id="email" name="email" placeholder="User@domain.com" required><br>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="company">Company</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="company" name="company" placeholder="Company or Organization"><br>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="phone">Phone Number</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                                placeholder="123-456-7890" required><br><br>
+                        </div>
+                    </div>
+                    <!--Dropdown Menu-->
+                    <div class="row">
+                        <div class="form-center">
+                            <select id="inquirytype" name="inquirytype" title="inquirytype">
+                                <option value="job">Job or Internship Opportunity</option>
+                                <option value="collab">Business Collaboration</option>
+                                <option value="project">Project Request</option>
+                                <option value="other">Other</option>
+                            </select><br><br>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-center">
+                            <textarea id="desc" name="inquirydesc"
+                                placeholder="Please provide a detailed description of your inquiry, including any relevant information or questions you may have."></textarea><br>
+                        </div>
+                    </div>
+                    <label for="files">Files</label>
+                    <input type="file" id="files" name="files" multiple>
+                    <button class="common-button" type="submit" id="form-button">Submit</button>
+                </form>
+            </div>
         </main>
 
         <!-- Footer Section -->
         <footer class="footer">
-            <h4>&copy; 2024 Tayah Lewter. All Rights Reserved.</h4>
-            <h4>
-                <a rel="noopener" href="mailto:TayahLewter@gmail.com">Email Me</a> |
+            <h4 id="footer-copy">&copy; 2024 Tayah Lewter. All Rights Reserved. </h4>
+            <h4 class="footer-right">
+                <a rel="noopener" href="mailto:TayahLewter@gmail.com"> Email Me |</a>
                 <a rel="noopener" href="https://www.linkedin.com/in/tayahlewter/" target="_blank">LinkedIn</a>
             </h4>
         </footer>
         <script src="global.js"></script>
     </body>
+
 </html>

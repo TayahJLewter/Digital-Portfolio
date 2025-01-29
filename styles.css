@@ -147,8 +147,6 @@ h2{
 .footer {
   position: fixed;
   bottom: 0;
-  left: 0;
-  text-align: left;
   font-size: 0.8em;
   width: 100%;
   background-color: #5c5346;
@@ -165,8 +163,7 @@ h2{
 }
 
 .footer h4 {
-  margin: -1px;
-  padding-right: 10px;
+  margin-top: -1px;
 }
 textarea {
   width: 100%;
@@ -449,5 +446,50 @@ a:hover {
 }
 
 #footer-copy{
-  color: #333;
+  color: white;
+}
+
+.main-content li:hover{
+  text-decoration: none;
+}
+
+.title-boldest{
+  font-weight: 900;
+  margin: 0;
+}
+
+.title-bolder{
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+.divider {
+  display: flex;
+  align-items: center;
+  content: '';
+  padding: 3px;
+  background-color: #5c5346;
+  margin-bottom: 15px;
+  border-radius: 5px
+}
+.title-date{
+  text-align: right;
+  margin: 0;
+  font-style: italic;
+}
+.title-date-container{
+  display:inline-flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.course-container{
+  display:flex;
+  justify-content: center;
+  margin-bottom: -20px;
+}
+.rev-course{
+  margin-bottom: 0px;
+  text-align: center;
+}
+.footer-right{
+  margin-left: auto;
 }
