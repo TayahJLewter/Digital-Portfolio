@@ -493,3 +493,41 @@ a:hover {
 .footer-right{
   margin-left: auto;
 }
+
+/* Projects styles */
+.projects-container{
+  background-color: #f5e6d3;
+  padding: 40px;
+  margin: auto;
+  max-width: 1200px;
+  width: 100%;
+  border: 2px solid #5c5346;
+  border-radius: 25px;
+  margin-top: 20px;
+}
+.project-card{
+  border: 2px solid #5c5346;
+  border-radius: 4px;
+  padding: 5px;
+  width: 200px;
+  background-color: #fffaf0;
+}
+.project-card:hover{
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+.project-card img{
+  width: 100%;
+  border-radius: 4px;
+}
+
+@media (max-width: 1024px) {
+  .project-card {
+    width: calc(50% - 20px); /* Two cards per row */
+  }
+}
+
+@media (max-width: 600px) {
+  .project-card {
+    width: 100%; /* One card per row */
+  }
+}
